@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" accept-charset-"urf-8" name="person_info" method="get">
+    
+    <fieldset style="width: 250px">
+        <legend>개인 정보 입력</legend>
+        이름 : <input type = "text" name="name" required><br><br>
+        주민번호 : <input type = "text" name="security_number" pattern="\d{6}\-\d{7}" title="123456-1234567 형식으로 입력해 주세요" required><br><br>
+    
+        아이디 : <input type = "text" name="id"><br><br>
+        패스워드 : <input type = "password" name="pw"><br><br>
+        성별 : <input type="radio" name="gender">남 <input type="radio" name="gender">여 <br>
+        관심사 : 연예<input type="checkbox"> 
+                스포츠<input type="checkbox">
+                IT<input type="checkbox">
+                <br>
+        <input type="submit" value="submit"/>
+         &nbsp; <input type="reset" value="reset"/>
+    </fieldset>
+    <br>
+</form>
+    
+</body>
+</html>

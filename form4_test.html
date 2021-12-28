@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset style="width: 250px">
+        <legend>개인 정보 입력</legend>
+        지역선택(size, multiple속성 추가) <br />
+        <select multiple size="5px">
+          <option>성남시</option>
+          <option>수원시</option>
+          <option>용인시</option>
+          <option>안양시</option>
+          <option>과천시</option>
+        </select>
+        <br />
+        지역선택(optgroup 태그 포함) <br />
+        <select>
+          <optgroup label="서울">
+            <option>송파구</option>
+            <option>강남구</option>
+            <option>서초구</option>
+            <option>중구</option>
+          </optgroup>
+          <optgroup label="경기도">
+            <option>성남시</option>
+            <option>수원시</option>
+            <option>용인시</option>
+            <option>안양시</option>
+          </optgroup>
+        </select>
+        <br />
+        <input type="submit" />
+        <input type="reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
