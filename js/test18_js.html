@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function add() {
+        var x = Number(document.form.a.value);
+        var y = Number(document.form.b.value);
+
+        var result_add = x + y;
+        document.form.result.value = result_add;
+      }
+
+      function minu() {
+        var x = Number(document.form.a.value);
+        var y = Number(document.form.b.value);
+
+        var result_min = x - y;
+        document.form.result.value = result_min;
+      }
+
+      function multi() {
+        var x = Number(document.form.a.value);
+        var y = Number(document.form.b.value);
+
+        var result_multi = x * y;
+        document.form.result.value = result_multi;
+      }
+
+      function div() {
+        var x = Number(document.form.a.value);
+        var y = Number(document.form.b.value);
+
+        var result_div = x / y;
+        document.form.result.value = result_div;
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="form">
+      A : <input type="text" name="a" /> <br />
+      B : <input type="text" name="b" /> 결과 :
+      <input type="text" name="result" readonly />
+      <button type="reset">C</button>
+    </form>
+    <input type="button" onclick="add()" value="+" />
+    <input type="button" onclick="minu()" value="-" />
+    <input type="button" onclick="multi()" value="*" />
+    <input type="button" onclick="div()" value="/" />
+  </body>
+</html>

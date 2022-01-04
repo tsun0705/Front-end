@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    function Calc() {
+      var x = Number(document.calculator.number1.value);
+      var y = Number(document.calculator.number2.value);
+
+      var result_Add = x + y;
+      document.calculator.result.value = result_Add;
+    }
+  </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="calculator">
+      입력1 : <input type="text" name="number1" size="10" /> <br />입력2 :
+      <input type="text" name="number2" size="10" /> <br />
+      결과 :
+      <input type="text" name="result" />
+
+      <button type="reset">C</button>
+    </form>
+    <button onclick="Calc()">+</button>
+  </body>
+</html>
