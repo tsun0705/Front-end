@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      .test * {
+        display: block;
+        border: 2px solid orange;
+        color: blue;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("div a").css({
+            color: "green",
+            border: "2px solid green",
+          });
+        });
+      });
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=<device-width>, initial-scal   e=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="test">
+      <a href="#">a1 Tag</a>
+      <p>
+        p (child)
+        <span>span 1</span>
+        <a href="#">a2 Tag</a>
+      </p>
+      <p>
+        p (child)
+        <span>span 2</span>
+      </p>
+    </div>
+    <button>Click me th hid paragraphs</button>
+  </body>
+</html>
