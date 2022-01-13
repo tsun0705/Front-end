@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(":selected").css("background-color", "green");
+      });
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=<device-width>, initial-scal   e=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      Name : <input type="text" name="user" /><br />
+      Car :
+      <select>
+        <option>Volvo</option>
+        <option>Saab</option>
+        <option selected>HyunDai</option>
+        <option>KIA</option>
+      </select>
+    </form>
+    <button id="image">Image Test</button>
+  </body>
+</html>

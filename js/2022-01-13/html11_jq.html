@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".animate").click(function () {
+          $("body").animate({
+            backgroundPositionX: "+=200px",
+            backgroundPositionY: "+=100px",
+          });
+        });
+
+        $(".reset").click(function () {
+          $("body").animate({
+            backgroundPositionX: "0px",
+            backgroundPositionY: "0px",
+          });
+        });
+      });
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=<device-width>, initial-scal   e=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background-image: url(https://imgnews.pstatic.net/image/144/2021/12/06/0000779191_001_20211206174402938.jpg?type=w647);
+      background-repeat: no-repeat;
+      position: fixed;
+    "
+  >
+    <button class="animate">Animate</button>
+    <button class="reset">Reset</button>
+  </body>
+</html>

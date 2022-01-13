@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(":checked").wrap("<span style='background-color:red'>");
+      });
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=<device-width>, initial-scal   e=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      Name : <input type="text" name="user" /><br />
+      bike : <input type="checkbox" name="bike" value="Bike" /><br />
+      car : <input type="checkbox" name="car" value="Car" checked /><br />
+      airplane :
+      <input type="checkbox" name="airplane" value="Airplane" /><br />
+    </form>
+  </body>
+</html>
